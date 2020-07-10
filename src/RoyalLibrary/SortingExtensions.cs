@@ -43,11 +43,8 @@ namespace ByteDecoder.RoyalLibrary
         }
       });
 
-      return orderedList
-        .AsParallel()
-        .AsOrdered()
-        .Select((fullName) => fullName.Value + fullName.Key)
-        .ToList();
+      return orderedList.AsParallel().AsOrdered()
+        .Select((fullName) => fullName.Value + fullName.Key).ToList();
     }
 
     /// <summary>
