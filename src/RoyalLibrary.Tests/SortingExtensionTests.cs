@@ -8,6 +8,24 @@ namespace RoyalLibrary.Tests
 {
   public class SortingExtensionTests
   {
+    // Arrange
+    private readonly List<string> _unsortedInputList = new List<string>()
+      {
+          "Ai Bi Bu",
+          "Ai Bi Az",
+          "Na Za",
+          "Xa Ma Co",
+          "AA bb"
+      };
+    private readonly List<string> _expectedOutputList = new List<string>()
+      {
+          "Ai Bi Az",
+          "AA bb",
+          "Ai Bi Bu",
+          "Xa Ma Co",
+          "Na Za",
+      };
+
     [Fact]
     public async void SortByLastNameAsync_ThrowArgumentNullException_WhenSourceIsNull()
     {
@@ -36,29 +54,25 @@ namespace RoyalLibrary.Tests
     public async void SortByLastNameAsync_ReturnsTheRightSortedList_WhenCorrectSourceIsProvided()
     {
       // Arrange
-      var unSortedlist = new List<string>()
-            {
-                "Ai Bi Bu",
-                "Ai Bi Az",
-                "Na Za",
-                "Xa Ma Co",
-                "AA bb"
-            };
-      var expected = new List<string>()
-            {
-                "Ai Bi Az",
-                "AA bb",
-                "Ai Bi Bu",
-                "Xa Ma Co",
-                "Na Za",
-
-            };
-
       // Act
-      var actual = await unSortedlist.SortByLastNameAsync();
+      var actual = await _unsortedInputList.SortByLastNameAsync();
 
       // Assert
-      Assert.True(expected[1] == actual.ElementAt(1));
+      Assert.True(_expectedOutputList[1] == actual.ElementAt(1));
+    }
+
+    [Fact]
+    public async void SortByLastNameAsyncWithAction_ReturnsTheRightSortedList_WhenCorrectSourceIsProvided()
+    {
+      // Arrange
+      var count = 0;
+
+      // Act
+      var actual = await _unsortedInputList.SortByLastNameAsync(_ => count++);
+
+      // Assert
+      Assert.True(_expectedOutputList[1] == actual.ElementAt(1));
+      Assert.Equal(5, count);
     }
   }
 }

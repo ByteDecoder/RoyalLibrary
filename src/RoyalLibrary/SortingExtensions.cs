@@ -5,7 +5,6 @@ using System.Threading.Tasks;
 
 namespace ByteDecoder.RoyalLibrary
 {
-
   /// <summary>
   /// Advanced sorting for collections
   /// </summary>
@@ -16,131 +15,59 @@ namespace ByteDecoder.RoyalLibrary
     /// </summary>
     /// <param name="source"></param>
     /// <returns>An Enumerable sorted collection by LastName</returns>
-    public async static Task<IEnumerable<string>> SortByLastNameAsync(this IEnumerable<string> source)
+    public async static Task<ICollection<string>> SortByLastNameAsync(this IEnumerable<string> source)
     {
       if (source == null)
         throw new ArgumentNullException(nameof(source));
 
       int rowsCount = source.Count();
 
-      if (rowsCount == 0) return source; 
+      if (rowsCount == 0) return (ICollection<string>)source;
 
       byte lastspaceIndex = 0;
       string firstName, lastName = null;
-      var tempDic = new MultiKeysValue() { Capacity = rowsCount };
-      var tempList = new List<string>(rowsCount);
-      var tempResult = new List<string>(rowsCount);
+      var orderedList = new SortedList<string, string>() { Capacity = rowsCount };
 
       await Task.Run(() =>
       {
         foreach (var item in source)
         {
-
           var spaces = item.Count(char.IsWhiteSpace);
           lastspaceIndex = (byte)item.IndexOfNth(' ', spaces - 1);
 
-          //get the whole firstname(s) , then the lastName, add them to tempDic which will be used
-          //to get firstname(s) by lastName
-          //lastname will be added to the temp list and sorted everytime 
           firstName = item.Substring(0, lastspaceIndex);
           var lastNameLength = item.Length - firstName.Length;
           lastName = item.Substring(lastspaceIndex, lastNameLength);
 
-          tempDic.Add(firstName, lastName);
-          tempList.Add(lastName);
-        }
-        tempList.Sort();
-
-      }).ContinueWith(async (filtering) =>
-      {
-        foreach (var LastName in tempList)
-        {
-          //get the firstName(s) from tempDic by lastName
-
-          var dicfirstName = tempDic.AsParallel().First(x => x.Value == LastName).Key;
-          await Task.Delay(0);//fake await to run everything smoothly
-                              //combine names again with sorted
-          tempResult.Add(dicfirstName + LastName);
-
+          orderedList.Add(lastName, firstName);
         }
       });
-      tempDic = null;
-      tempList = null;
-      return tempResult;
 
-
-
-
-
+      return orderedList.AsParallel()
+        .AsOrdered()
+        .Select((fullName) => fullName.Value + fullName.Key).ToList();
     }
+
     /// <summary>
     /// returns a new sorted ICollection 
     /// </summary>
     /// <param name="source"></param>
     /// <param name="action"></param>
     /// <returns>An Enumerable sorted collection by LastName</returns>
-    public async static Task<ICollection<string>> RoyalSortLastAsync(this IEnumerable<string> source, Action<string> action)
+    public async static Task<IEnumerable<string>> SortByLastNameAsync(this IEnumerable<string> source, Action<string> action)
     {
-      int rowsCount = source.Count();
-      byte lastspaceIndex = 0;
-      string firstName, lastName = null;
-      var tempDic = new MultiKeysValue() { Capacity = rowsCount };
-      var tempList = new List<string>(rowsCount);
-      var tempResult = new List<string>(rowsCount);
-
-      await Task.Run(() =>
-      {
-        foreach (var item in source)
-        {
-
-          var spaces = item.Count(char.IsWhiteSpace);
-          lastspaceIndex = (byte)item.IndexOfNth(' ', spaces - 1);
-
-          //get the whole firstname(s) , then the lastName, add them to tempDic which will be used
-          //to get firstname(s) by lastName
-          //lastname will be added to the temp list and sorted everytime 
-          firstName = item.Substring(0, lastspaceIndex);
-          var lastNameLength = item.Length - firstName.Length;
-          lastName = item.Substring(lastspaceIndex, lastNameLength);
-
-          tempDic.Add(firstName, lastName);
-          tempList.Add(lastName);
-
-
-
-        }
-        tempList.Sort();
-
-      }).ContinueWith(async (filtering) =>
-      {
-        foreach (var LastName in tempList)
-        {
-          //get the firstName from tempDic by lastName
-
-          var dicfirstName = tempDic.AsParallel().First(x => x.Value == LastName).Key;
-          await Task.Delay(0);//fake await to run everything smoothly
-                              //combine names again with sorted
-          tempResult.Add(dicfirstName + LastName);
-
-        }
-      });
-      tempDic = null;
-      tempList = null;
-
-      foreach (var item in tempResult.AsParallel())
-      {
-        action.Invoke(item);
-      }
-
-      return tempResult;
-
-
-
-
-
+      var sortedList = await source.SortByLastNameAsync();
+      sortedList.AsParallel().ForAll(action);
+      return sortedList;
     }
 
-
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="str"></param>
+    /// <param name="value"></param>
+    /// <param name="nth"></param>
+    /// <returns></returns>
     private static int IndexOfNth(this string str, char value, int nth)
     {
       if (nth < 0)
@@ -156,16 +83,21 @@ namespace ByteDecoder.RoyalLibrary
       return offset;
     }
 
-
-  }
-  class MultiKeysValue : List<KeyValuePair<string, string>>
-  {
-
-
-    public void Add(string key, string value)
+    /// <summary>
+    /// 
+    /// </summary>
+    class MultiKeysValue : List<KeyValuePair<string, string>>
     {
-      var element = new KeyValuePair<string, string>(key, value);
-      this.Add(element);
+      /// <summary>
+      /// 
+      /// </summary>
+      /// <param name="key"></param>
+      /// <param name="value"></param>
+      public void Add(string key, string value)
+      {
+        var element = new KeyValuePair<string, string>(key, value);
+        this.Add(element);
+      }
     }
   }
 }
