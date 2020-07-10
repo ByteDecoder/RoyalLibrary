@@ -31,7 +31,7 @@ namespace ByteDecoder.RoyalLibrary
     }
 
     /// <summary>
-    /// Returns the element with the Max Element based on the selector of IComparable type
+    /// Returns the element with the Max property value, based on the selector of IComparable type
     /// in the sequence of elements
     /// </summary>
     /// <typeparam name="TElement"></typeparam>
