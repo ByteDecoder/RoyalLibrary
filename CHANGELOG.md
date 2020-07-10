@@ -1,4 +1,4 @@
-### 1.4.0 - TBD
+### 1.4.0 - 2020-07-10
   * Added more utility extensions methods to ComparisonExtensions class
   * Added new sort LINQ query operators in SortingExtensions class
 
