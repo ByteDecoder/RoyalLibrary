@@ -43,9 +43,11 @@ namespace ByteDecoder.RoyalLibrary
         }
       });
 
-      return orderedList.AsParallel()
+      return orderedList
+        .AsParallel()
         .AsOrdered()
-        .Select((fullName) => fullName.Value + fullName.Key).ToList();
+        .Select((fullName) => fullName.Value + fullName.Key)
+        .ToList();
     }
 
     /// <summary>
@@ -54,10 +56,15 @@ namespace ByteDecoder.RoyalLibrary
     /// <param name="source"></param>
     /// <param name="action"></param>
     /// <returns>An Enumerable sorted collection by LastName</returns>
-    public async static Task<IEnumerable<string>> SortByLastNameAsync(this IEnumerable<string> source, Action<string> action)
+    public async static Task<ICollection<string>> SortByLastNameAsync(this IEnumerable<string> source, Action<string> action)
     {
       var sortedList = await source.SortByLastNameAsync();
-      sortedList.AsParallel().ForAll(action);
+
+      sortedList
+        .AsParallel()
+        .AsOrdered()
+        .ForEach(action);
+
       return sortedList;
     }
 
