@@ -11,19 +11,20 @@ namespace ByteDecoder.RoyalLibrary
   /// </summary>
   public static class SortingExtensions
   {
-
-
     /// <summary>
     /// returns a new sorted ICollection 
     /// </summary>
     /// <param name="source"></param>
     /// <returns>An Enumerable sorted collection by LastName</returns>
-    public async static Task<ICollection<string>> RoyalSortLastAsync(this IEnumerable<string> source)
+    public async static Task<IEnumerable<string>> SortByLastNameAsync(this IEnumerable<string> source)
     {
       if (source == null)
         throw new ArgumentNullException(nameof(source));
 
       int rowsCount = source.Count();
+
+      if (rowsCount == 0) return source; 
+
       byte lastspaceIndex = 0;
       string firstName, lastName = null;
       var tempDic = new MultiKeysValue() { Capacity = rowsCount };
@@ -47,10 +48,9 @@ namespace ByteDecoder.RoyalLibrary
 
           tempDic.Add(firstName, lastName);
           tempList.Add(lastName);
-          tempList.Sort();
-
-
         }
+        tempList.Sort();
+
       }).ContinueWith(async (filtering) =>
       {
         foreach (var LastName in tempList)
@@ -105,10 +105,12 @@ namespace ByteDecoder.RoyalLibrary
 
           tempDic.Add(firstName, lastName);
           tempList.Add(lastName);
-          tempList.Sort();
+
 
 
         }
+        tempList.Sort();
+
       }).ContinueWith(async (filtering) =>
       {
         foreach (var LastName in tempList)
