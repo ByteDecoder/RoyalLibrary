@@ -8,44 +8,71 @@ namespace RoyalLibrary.Tests
 {
   public class SortingExtensionTests
   {
+    // Arrange
+    private readonly List<string> _unsortedInputList = new List<string>()
+      {
+          "Ai Bi Bu",
+          "Ai Bi Az",
+          "Na Za",
+          "Xa Ma Co",
+          "AA bb"
+      };
+    private readonly List<string> _expectedOutputList = new List<string>()
+      {
+          "Ai Bi Az",
+          "AA bb",
+          "Ai Bi Bu",
+          "Xa Ma Co",
+          "Na Za",
+      };
+
     [Fact]
-    public async void RoyalSortLastAsync_ThrowArgumentNullException_WhenSourceIsNull()
+    public async void SortByLastNameAsync_ThrowArgumentNullException_WhenSourceIsNull()
     {
       // Arrange
       IList<string> words = null;
 
       // Act
       // Assert
-      await Assert.ThrowsAsync<ArgumentNullException>(() => words.RoyalSortLastAsync());
+      await Assert.ThrowsAsync<ArgumentNullException>(() => words.SortByLastNameAsync());
     }
 
     [Fact]
-    public async void RoyalSortLastAsync_ReturnsTheRightSortedList_WhenCorrectSourceIsProvided()
+    public async void SortByLastNameAsync_ReturnsSourceCOllections_WhenSourceSizeIsZero()
     {
       // Arrange
-      var unSortedlist = new List<string>()
-            {
-                "Ai Bi Bu",
-                "Ai Bi Az",
-                "Na Za",
-                "Xa Ma Co",
-                "AA bb"
-            };
-      var expected = new List<string>()
-            {
-                "Ai Bi Az",
-                "AA bb",
-                "Ai Bi Bu",
-                "Xa Ma Co",
-                "Na Za",
-
-            };
+      IList<string> words = new List<string>();
 
       // Act
-      var actual = await unSortedlist.RoyalSortLastAsync();
+      var result = await words.SortByLastNameAsync();
 
       // Assert
-      Assert.True(expected[1] == actual.ElementAt(1));
+      Assert.Same(words, result);
+    }
+
+    [Fact]
+    public async void SortByLastNameAsync_ReturnsTheRightSortedList_WhenCorrectSourceIsProvided()
+    {
+      // Arrange
+      // Act
+      var actual = await _unsortedInputList.SortByLastNameAsync();
+
+      // Assert
+      Assert.True(_expectedOutputList[1] == actual.ElementAt(1));
+    }
+
+    [Fact]
+    public async void SortByLastNameAsyncWithAction_ReturnsTheRightSortedList_WhenCorrectSourceIsProvided()
+    {
+      // Arrange
+      var count = 0;
+
+      // Act
+      var actual = await _unsortedInputList.SortByLastNameAsync(_ => count++);
+
+      // Assert
+      Assert.True(_expectedOutputList[1] == actual.ElementAt(1));
+      Assert.Equal(5, count);
     }
   }
 }
