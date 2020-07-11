@@ -3,7 +3,7 @@ using System;
 namespace ByteDecoder.RoyalLibrary
 {
   /// <summary>
-  /// Times LINQ query operators allow to excute a block n times defined by the integer number source
+  /// Times LINQ query operators allow to execute a block n times defined by the integer number source
   /// </summary>
   public static class TimesExtensions
   {

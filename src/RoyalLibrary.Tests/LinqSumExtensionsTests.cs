@@ -64,7 +64,7 @@ namespace RoyalLibrary.Tests
       };
 
       // Act
-      var result = people.LongSum(people => people.Age);
+      var result = people.LongSum(p => p.Age);
 
       // Assert
       Assert.Equal(23 + 35, result);
@@ -81,7 +81,7 @@ namespace RoyalLibrary.Tests
       };
 
       // Act
-      var result = people.LongSum(people => people.Age);
+      var result = people.LongSum(p => p.Age);
 
       // Assert
       Assert.Equal(23 + 46, result);

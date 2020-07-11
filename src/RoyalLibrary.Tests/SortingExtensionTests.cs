@@ -30,15 +30,13 @@ namespace RoyalLibrary.Tests
     public async void SortByLastNameAsync_ThrowArgumentNullException_WhenSourceIsNull()
     {
       // Arrange
-      IList<string> words = null;
-
       // Act
       // Assert
-      await Assert.ThrowsAsync<ArgumentNullException>(() => words.SortByLastNameAsync());
+      await Assert.ThrowsAsync<ArgumentNullException>(() => ((IList<string>) null).SortByLastNameAsync());
     }
 
     [Fact]
-    public async void SortByLastNameAsync_ReturnsSourceCOllections_WhenSourceSizeIsZero()
+    public async void SortByLastNameAsync_ReturnsSourceCollections_WhenSourceSizeIsZero()
     {
       // Arrange
       IList<string> words = new List<string>();

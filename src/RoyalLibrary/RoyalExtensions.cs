@@ -9,7 +9,7 @@ namespace ByteDecoder.RoyalLibrary
   public static class RoyalExtensions
   {
     /// <summary>
-    /// Deferred execution returnning a LINQ sequence of elements, after applying the selector on each sequence element
+    /// Deferred execution returning a LINQ sequence of elements, after applying the selector on each sequence element
     /// </summary>
     /// <typeparam name="TInput">Element type</typeparam>
     /// <typeparam name="TResult">Result data type</typeparam>

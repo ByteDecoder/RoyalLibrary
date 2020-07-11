@@ -1,4 +1,4 @@
-namespace RoyalLibrary
+namespace ByteDecoder.RoyalLibrary
 {
   /// <summary>
   /// 

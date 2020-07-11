@@ -1,3 +1,4 @@
+using ByteDecoder.RoyalLibrary;
 using Xunit;
 
 namespace RoyalLibrary.Tests

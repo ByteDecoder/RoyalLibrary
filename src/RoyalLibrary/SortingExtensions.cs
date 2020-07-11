@@ -15,29 +15,30 @@ namespace ByteDecoder.RoyalLibrary
     /// </summary>
     /// <param name="source"></param>
     /// <returns>An Enumerable sorted collection by LastName</returns>
-    public async static Task<ICollection<string>> SortByLastNameAsync(this IEnumerable<string> source)
+    public static async Task<ICollection<string>> SortByLastNameAsync(this IEnumerable<string> source)
     {
-      if (source == null)
+      if(source == null)
         throw new ArgumentNullException(nameof(source));
 
-      int rowsCount = source.Count();
+      var enumerable = source as string[] ?? source.ToArray();
+      int rowsCount = enumerable.Count();
 
-      if (rowsCount == 0) return (ICollection<string>)source;
+      if(rowsCount == 0) return (ICollection<string>)source;
 
-      byte lastspaceIndex = 0;
-      string firstName, lastName = null;
+      byte lastSpaceIndex;
+      string firstName, lastName;
       var orderedList = new SortedList<string, string>() { Capacity = rowsCount };
 
       await Task.Run(() =>
       {
-        foreach (var item in source)
+        foreach(var item in enumerable)
         {
           var spaces = item.Count(char.IsWhiteSpace);
-          lastspaceIndex = (byte)item.IndexOfNth(' ', spaces - 1);
+          lastSpaceIndex = (byte)item.IndexOfNth(' ', spaces - 1);
 
-          firstName = item.Substring(0, lastspaceIndex);
+          firstName = item.Substring(0, lastSpaceIndex);
           var lastNameLength = item.Length - firstName.Length;
-          lastName = item.Substring(lastspaceIndex, lastNameLength);
+          lastName = item.Substring(lastSpaceIndex, lastNameLength);
 
           orderedList.Add(lastName, firstName);
         }
@@ -53,7 +54,7 @@ namespace ByteDecoder.RoyalLibrary
     /// <param name="source"></param>
     /// <param name="action"></param>
     /// <returns>An Enumerable sorted collection by LastName</returns>
-    public async static Task<ICollection<string>> SortByLastNameAsync(this IEnumerable<string> source, Action<string> action)
+    public static async Task<ICollection<string>> SortByLastNameAsync(this IEnumerable<string> source, Action<string> action)
     {
       var sortedList = await source.SortByLastNameAsync();
 
@@ -74,34 +75,17 @@ namespace ByteDecoder.RoyalLibrary
     /// <returns></returns>
     private static int IndexOfNth(this string str, char value, int nth)
     {
-      if (nth < 0)
+      if(nth < 0)
         throw new ArgumentException($"Negative index found {nameof(nth)} has negative value, it must start at 0");
 
       int offset = str.IndexOf(value);
-      for (int i = 0; i < nth; i++)
+      for(int i = 0; i < nth; i++)
       {
-        if (offset == -1) return -1;
+        if(offset == -1) return -1;
         offset = str.IndexOf(value, offset + 1);
       }
 
       return offset;
-    }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    class MultiKeysValue : List<KeyValuePair<string, string>>
-    {
-      /// <summary>
-      /// 
-      /// </summary>
-      /// <param name="key"></param>
-      /// <param name="value"></param>
-      public void Add(string key, string value)
-      {
-        var element = new KeyValuePair<string, string>(key, value);
-        this.Add(element);
-      }
     }
   }
 }
