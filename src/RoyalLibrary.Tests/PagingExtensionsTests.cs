@@ -25,11 +25,11 @@ namespace RoyalLibrary.Tests
     public void Page_ThrowsArgumentNullException_WhenSourceIsNull()
     {
       // Arrange
-      string[] words = null;
+      IQueryable<string> words = null;
 
       // Act
       // Assert
-      Assert.Throws<ArgumentNullException>(() => words!.AsQueryable().Page(1, 1));
+      Assert.Throws<ArgumentNullException>(() => words!.Page(1, 1));
     }
 
     [Fact]
