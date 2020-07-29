@@ -1,9 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>ByteDecoder.RoyalLibrary</RootNamespace>
     <Authors>ByteDecoder</Authors>
-    <Company/>
+    <Company />
     <PackageId>ByteDecoder.RoyalLibrary</PackageId>
     <Title>ByteDecoder.RoyalLibrary</Title>
     <Description>Collection of useful LINQ query operators</Description>
@@ -13,7 +13,7 @@
     <RepositoryType>MIT</RepositoryType>
     <PackageTags>csharp dotnetstandard linq</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.4.1</Version>
+    <Version>1.5.0</Version>
     <PackageIcon>icon.png</PackageIcon>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <AssemblyName>ByteDecoder.RoyalLibrary</AssemblyName>
@@ -23,13 +23,13 @@
   <ItemGroup>
     <None Include="..\..\LICENSE">
       <Pack>True</Pack>
-      <PackagePath/>
+      <PackagePath />
     </None>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="ByteDecoder.Common" Version="0.2.3"/>
+    <PackageReference Include="ByteDecoder.Common" Version="0.3.0" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="icon.png" Pack="true" Visible="false" PackagePath=""/>
+    <None Include="icon.png" Pack="true" Visible="false" PackagePath="" />
   </ItemGroup>
 </Project>
