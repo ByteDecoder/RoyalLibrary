@@ -1,4 +1,4 @@
-using System;
+using ByteDecoder.Common.GuardClauses;
 using System.Collections.Generic;
 using System.IO;
 
@@ -16,9 +16,9 @@ namespace ByteDecoder.RoyalLibrary
     /// <returns></returns>
     public static IEnumerable<string> Lines(this StreamReader source)
     {
-      string line;
+      Guard.Break.IfArgumentIsNull(source, nameof(source));
 
-      if (source == null) throw new ArgumentNullException(nameof(source));
+      string line;
 
       while ((line = source.ReadLine()) != null)
         yield return line;
