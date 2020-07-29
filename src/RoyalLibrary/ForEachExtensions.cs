@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using ByteDecoder.Common.GuardClauses;
 
 namespace ByteDecoder.RoyalLibrary
 {
@@ -17,11 +18,8 @@ namespace ByteDecoder.RoyalLibrary
     /// <param name="action">Applied action on to transform each collection element</param>
     public static void ForEach<T>(this IEnumerable<T> source, Action<T> action)
     {
-      if (source == null)
-        throw new ArgumentNullException(nameof(source));
-
-      if (action == null)
-        throw new ArgumentNullException(nameof(action));
+      Guard.Break.IfArgumentIsNull(source, nameof(source));
+      Guard.Break.IfArgumentIsNull(action, nameof(action));
 
       foreach (var element in source)
       {
@@ -38,11 +36,8 @@ namespace ByteDecoder.RoyalLibrary
     /// <param name="action">Applied action on to transform each collection element</param>
     public static void ForEach<T>(this IEnumerable<T> source, Action<T, int> action)
     {
-      if (source == null)
-        throw new ArgumentNullException(nameof(source));
-
-      if (action == null)
-        throw new ArgumentNullException(nameof(action));
+      Guard.Break.IfArgumentIsNull(source, nameof(source));
+      Guard.Break.IfArgumentIsNull(action, nameof(action));
 
       var index = 0;
       foreach (var element in source)
