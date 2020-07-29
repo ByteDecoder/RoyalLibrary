@@ -1,3 +1,6 @@
+### 1.4.1 - 2020-07-28
+  * Added ByteDecoder.Common to handle Guard clauses
+  
 ### 1.4.0 - 2020-07-10
   * Added more utility extensions methods to ComparisonExtensions class
   * Added new sort LINQ query operators in SortingExtensions class

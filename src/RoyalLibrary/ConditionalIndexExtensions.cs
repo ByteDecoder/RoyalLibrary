@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using ByteDecoder.Common.GuardClauses;
 
 namespace ByteDecoder.RoyalLibrary
 {
@@ -19,11 +20,8 @@ namespace ByteDecoder.RoyalLibrary
     /// <returns></returns>
     public static IEnumerable<int> TopIndexes<T>(this IEnumerable<T> source, Func<T, bool> predicate, int topIndexes)
     {
-      if (source == null)
-        throw new ArgumentNullException(nameof(source));
-
-      if (predicate == null)
-        throw new ArgumentNullException(nameof(predicate));
+      Guard.Break.IfArgumentIsNull(source, nameof(source));
+      Guard.Break.IfArgumentIsNull(predicate, nameof(predicate));
 
       return source.Select((value, index) => new { value, index })
         .Where(x => predicate(x.value))
