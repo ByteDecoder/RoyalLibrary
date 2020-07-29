@@ -1,5 +1,6 @@
 using System;
 using System.Linq;
+using ByteDecoder.Common.GuardClauses;
 
 namespace ByteDecoder.RoyalLibrary
 {
@@ -18,12 +19,12 @@ namespace ByteDecoder.RoyalLibrary
     /// <returns></returns>
     public static IQueryable<T> Page<T>(this IQueryable<T> query, int pageNumZeroStart, int pageSize)
     {
-      if (query is null) throw new ArgumentNullException(nameof(query));
+      Guard.Break.IfArgumentIsNull(query, nameof(query));
 
-      if (pageSize == 0)
+      if(pageSize == 0)
         throw new ArgumentOutOfRangeException(nameof(pageSize), "pageSize cannot be zero.");
 
-      if (pageNumZeroStart != 0)
+      if(pageNumZeroStart != 0)
         query = query.Skip(pageNumZeroStart * pageSize);
 
       return query.Take(pageSize);
