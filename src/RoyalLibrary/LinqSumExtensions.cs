@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using ByteDecoder.Common.GuardClauses;
 
 namespace ByteDecoder.RoyalLibrary
 {
@@ -17,8 +18,7 @@ namespace ByteDecoder.RoyalLibrary
     /// <returns></returns>
     public static long LongSum(this IEnumerable<int> source)
     {
-      if (source == null)
-        throw new ArgumentNullException(nameof(source));
+      Guard.Break.IfArgumentIsNull(source, nameof(source));
 
       long sum = 0;
       checked
@@ -35,15 +35,14 @@ namespace ByteDecoder.RoyalLibrary
     /// <returns></returns>
     public static long? LongSum(this IEnumerable<int?> source)
     {
-      if (source == null)
-        throw new ArgumentNullException(nameof(source));
+      Guard.Break.IfArgumentIsNull(source, nameof(source));
 
       long? sum = 0;
       checked
       {
-        foreach (var number in source)
+        foreach(var number in source)
         {
-          if (number.HasValue) sum += number;
+          if(number.HasValue) sum += number;
         }
       }
       return sum;
