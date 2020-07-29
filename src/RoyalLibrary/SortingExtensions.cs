@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ByteDecoder.Common.GuardClauses;
 
 namespace ByteDecoder.RoyalLibrary
 {
@@ -17,11 +18,10 @@ namespace ByteDecoder.RoyalLibrary
     /// <returns>An Enumerable sorted collection by LastName</returns>
     public static async Task<ICollection<string>> SortByLastNameAsync(this IEnumerable<string> source)
     {
-      if(source == null)
-        throw new ArgumentNullException(nameof(source));
+      Guard.Break.IfArgumentIsNull(source, nameof(source));
 
       var enumerable = source as string[] ?? source.ToArray();
-      int rowsCount = enumerable.Count();
+      var rowsCount = enumerable.Count();
 
       if(rowsCount == 0) return (ICollection<string>)source;
 
@@ -78,8 +78,8 @@ namespace ByteDecoder.RoyalLibrary
       if(nth < 0)
         throw new ArgumentException($"Negative index found {nameof(nth)} has negative value, it must start at 0");
 
-      int offset = str.IndexOf(value);
-      for(int i = 0; i < nth; i++)
+      var offset = str.IndexOf(value);
+      for(var i = 0; i < nth; i++)
       {
         if(offset == -1) return -1;
         offset = str.IndexOf(value, offset + 1);
