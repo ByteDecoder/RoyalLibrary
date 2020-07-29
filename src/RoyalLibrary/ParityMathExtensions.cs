@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using ByteDecoder.Common.GuardClauses;
 
 namespace ByteDecoder.RoyalLibrary
 {
@@ -12,12 +13,12 @@ namespace ByteDecoder.RoyalLibrary
     /// <summary>
     ///  Even expression evaluation delegate type
     /// </summary>
-    public static Func<int, bool> EvenPredicate = value => value % 2 == 0;
+    public static readonly Func<int, bool> EvenPredicate = value => value % 2 == 0;
 
     /// <summary>
     /// Odd expression evaluation delegate type
     /// </summary>
-    public static Func<int, bool> OddPredicate = value => value % 2 != 0;
+    public static readonly Func<int, bool> OddPredicate = value => value % 2 != 0;
 
     /// <summary>
     /// Return an array of evens integers from an integer source collection
@@ -25,39 +26,6 @@ namespace ByteDecoder.RoyalLibrary
     /// <param name="numbers">Integer source collection</param>
     /// <returns></returns>
     public static IEnumerable<int> Evens(this IEnumerable<int> numbers) => numbers.Where(EvenPredicate);
-
-    /// <summary>
-    /// Return an array of odds integers from an integer source collection
-    /// </summary>
-    /// <param name="numbers">Integer source collection</param>
-    /// <returns></returns>
-    public static IEnumerable<int> Odds(this IEnumerable<int> numbers) => numbers.Where(OddPredicate);
-
-    /// <summary>
-    /// Deferred execution
-    /// </summary>
-    /// <param name="source"></param>
-    /// <param name="evaluatorPredicate"></param>
-    /// <param name="selector"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
-    public static IEnumerable<T> ParityEvaluator<T>(this IEnumerable<T> source, Func<int, bool> evaluatorPredicate, Func<T, int> selector)
-    {
-      if (source == null)
-        throw new ArgumentNullException(nameof(source));
-
-      if (evaluatorPredicate == null)
-        throw new ArgumentNullException(nameof(evaluatorPredicate));
-
-      if (selector == null)
-        throw new ArgumentNullException(nameof(selector));
-
-      foreach (var item in source)
-      {
-        if (evaluatorPredicate(selector(item)))
-          yield return item;
-      }
-    }
 
     /// <summary>
     /// Deferred execution
@@ -68,6 +36,13 @@ namespace ByteDecoder.RoyalLibrary
     /// <returns></returns>
     public static IEnumerable<T> Evens<T>(this IEnumerable<T> source, Func<T, int> selector) =>
       source.ParityEvaluator(EvenPredicate, selector);
+
+    /// <summary>
+    /// Return an array of odds integers from an integer source collection
+    /// </summary>
+    /// <param name="numbers">Integer source collection</param>
+    /// <returns></returns>
+    public static IEnumerable<int> Odds(this IEnumerable<int> numbers) => numbers.Where(OddPredicate);
 
     /// <summary>
     /// Deferred Execution
@@ -91,5 +66,26 @@ namespace ByteDecoder.RoyalLibrary
     /// <param name="numbers">Integer source collection</param>
     /// <returns></returns>
     public static long TotalAllOdds(this IEnumerable<int> numbers) => numbers.Odds().LongSum();
+
+    /// <summary>
+    /// Deferred execution
+    /// </summary>
+    /// <param name="source"></param>
+    /// <param name="evaluatorPredicate"></param>
+    /// <param name="selector"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
+    public static IEnumerable<T> ParityEvaluator<T>(this IEnumerable<T> source, Func<int, bool> evaluatorPredicate, Func<T, int> selector)
+    {
+      Guard.Break.IfArgumentIsNull(source, nameof(source));
+      Guard.Break.IfArgumentIsNull(evaluatorPredicate, nameof(evaluatorPredicate));
+      Guard.Break.IfArgumentIsNull(selector, nameof(selector));
+
+      foreach(var item in source)
+      {
+        if(evaluatorPredicate(selector(item)))
+          yield return item;
+      }
+    }
   }
 }
