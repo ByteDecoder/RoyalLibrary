@@ -1,4 +1,5 @@
 using System;
+using ByteDecoder.Common.GuardClauses;
 
 namespace ByteDecoder.RoyalLibrary
 {
@@ -14,10 +15,9 @@ namespace ByteDecoder.RoyalLibrary
     /// <param name="action">Action delegate type to execute on each iteration</param>
     public static void Times(this int source, Action action)
     {
-      if (action == null)
-        throw new ArgumentNullException(nameof(action));
+      Guard.Break.IfArgumentIsNull(action, nameof(action));
 
-      for (var i = 0; i < source; i++)
+      for(var i = 0; i < source; i++)
       {
         action();
       }
@@ -30,10 +30,9 @@ namespace ByteDecoder.RoyalLibrary
     /// <param name="action">Action delegate type to execute on each iteration + current iteration number</param>
     public static void Times(this int source, Action<int> action)
     {
-      if (action == null)
-        throw new ArgumentNullException(nameof(action));
+      Guard.Break.IfArgumentIsNull(action, nameof(action));
 
-      for (var i = 0; i < source; i++)
+      for(var i = 0; i < source; i++)
       {
         action(i);
       }
