@@ -1,3 +1,6 @@
+### 1.5.1 - 2020-07-30
+  * Added AllowedOutputExtensionsInPackageBuildOutputFolder in the csproj meta
+
 ### 1.5.0 - 2020-07-29
   * Added ByteDecoder.Common to handle Guard clauses
   * Moved to ByteDecoder.Common project the MathComparisonExtensions class
