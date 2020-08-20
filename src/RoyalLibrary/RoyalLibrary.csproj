@@ -17,7 +17,7 @@
         <PackageIcon>icon.png</PackageIcon>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <AssemblyName>ByteDecoder.RoyalLibrary</AssemblyName>
-        <PackageProjectUrl>https://github.com/ByteDecoder/RoyalLibrary</PackageProjectUrl>
+        <PackageProjectUrl>https://bytedecoder.me/RoyalLibrary</PackageProjectUrl>
         <Summary>Collection of useful LINQ query operators</Summary>
 
         <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
