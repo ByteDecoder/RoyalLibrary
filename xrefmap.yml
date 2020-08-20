@@ -20,13 +20,13 @@ references:
   isSpec: "True"
   fullName: ByteDecoder.RoyalLibrary.ConditionalIndexExtensions.TopIndexes
   nameWithType: ConditionalIndexExtensions.TopIndexes
-- uid: ByteDecoder.RoyalLibrary.ConditionalIndexExtensions.TopIndexes``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean},System.Int32)
+- uid: ByteDecoder.RoyalLibrary.ConditionalIndexExtensions.TopIndexes``1(IEnumerable{``0},Func{``0,System.Boolean},System.Int32)
   name: TopIndexes<T>(IEnumerable<T>, Func<T, Boolean>, Int32)
-  href: api/ByteDecoder.RoyalLibrary.ConditionalIndexExtensions.html#ByteDecoder_RoyalLibrary_ConditionalIndexExtensions_TopIndexes__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean__System_Int32_
-  commentId: M:ByteDecoder.RoyalLibrary.ConditionalIndexExtensions.TopIndexes``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean},System.Int32)
+  href: api/ByteDecoder.RoyalLibrary.ConditionalIndexExtensions.html#ByteDecoder_RoyalLibrary_ConditionalIndexExtensions_TopIndexes__1_IEnumerable___0__Func___0_System_Boolean__System_Int32_
+  commentId: M:ByteDecoder.RoyalLibrary.ConditionalIndexExtensions.TopIndexes``1(IEnumerable{``0},Func{``0,System.Boolean},System.Int32)
   name.vb: TopIndexes(Of T)(IEnumerable(Of T), Func(Of T, Boolean), Int32)
-  fullName: ByteDecoder.RoyalLibrary.ConditionalIndexExtensions.TopIndexes<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, System.Boolean>, System.Int32)
-  fullName.vb: ByteDecoder.RoyalLibrary.ConditionalIndexExtensions.TopIndexes(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.Boolean), System.Int32)
+  fullName: ByteDecoder.RoyalLibrary.ConditionalIndexExtensions.TopIndexes<T>(IEnumerable<T>, Func<T, System.Boolean>, System.Int32)
+  fullName.vb: ByteDecoder.RoyalLibrary.ConditionalIndexExtensions.TopIndexes(Of T)(IEnumerable(Of T), Func(Of T, System.Boolean), System.Int32)
   nameWithType: ConditionalIndexExtensions.TopIndexes<T>(IEnumerable<T>, Func<T, Boolean>, Int32)
   nameWithType.vb: ConditionalIndexExtensions.TopIndexes(Of T)(IEnumerable(Of T), Func(Of T, Boolean), Int32)
 - uid: ByteDecoder.RoyalLibrary.ForEachExtensions
@@ -42,22 +42,22 @@ references:
   isSpec: "True"
   fullName: ByteDecoder.RoyalLibrary.ForEachExtensions.ForEach
   nameWithType: ForEachExtensions.ForEach
-- uid: ByteDecoder.RoyalLibrary.ForEachExtensions.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0,System.Int32})
+- uid: ByteDecoder.RoyalLibrary.ForEachExtensions.ForEach``1(IEnumerable{``0},Action{``0,System.Int32})
   name: ForEach<T>(IEnumerable<T>, Action<T, Int32>)
-  href: api/ByteDecoder.RoyalLibrary.ForEachExtensions.html#ByteDecoder_RoyalLibrary_ForEachExtensions_ForEach__1_System_Collections_Generic_IEnumerable___0__System_Action___0_System_Int32__
-  commentId: M:ByteDecoder.RoyalLibrary.ForEachExtensions.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0,System.Int32})
+  href: api/ByteDecoder.RoyalLibrary.ForEachExtensions.html#ByteDecoder_RoyalLibrary_ForEachExtensions_ForEach__1_IEnumerable___0__Action___0_System_Int32__
+  commentId: M:ByteDecoder.RoyalLibrary.ForEachExtensions.ForEach``1(IEnumerable{``0},Action{``0,System.Int32})
   name.vb: ForEach(Of T)(IEnumerable(Of T), Action(Of T, Int32))
-  fullName: ByteDecoder.RoyalLibrary.ForEachExtensions.ForEach<T>(System.Collections.Generic.IEnumerable<T>, System.Action<T, System.Int32>)
-  fullName.vb: ByteDecoder.RoyalLibrary.ForEachExtensions.ForEach(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Action(Of T, System.Int32))
+  fullName: ByteDecoder.RoyalLibrary.ForEachExtensions.ForEach<T>(IEnumerable<T>, Action<T, System.Int32>)
+  fullName.vb: ByteDecoder.RoyalLibrary.ForEachExtensions.ForEach(Of T)(IEnumerable(Of T), Action(Of T, System.Int32))
   nameWithType: ForEachExtensions.ForEach<T>(IEnumerable<T>, Action<T, Int32>)
   nameWithType.vb: ForEachExtensions.ForEach(Of T)(IEnumerable(Of T), Action(Of T, Int32))
-- uid: ByteDecoder.RoyalLibrary.ForEachExtensions.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+- uid: ByteDecoder.RoyalLibrary.ForEachExtensions.ForEach``1(IEnumerable{``0},Action{``0})
   name: ForEach<T>(IEnumerable<T>, Action<T>)
-  href: api/ByteDecoder.RoyalLibrary.ForEachExtensions.html#ByteDecoder_RoyalLibrary_ForEachExtensions_ForEach__1_System_Collections_Generic_IEnumerable___0__System_Action___0__
-  commentId: M:ByteDecoder.RoyalLibrary.ForEachExtensions.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+  href: api/ByteDecoder.RoyalLibrary.ForEachExtensions.html#ByteDecoder_RoyalLibrary_ForEachExtensions_ForEach__1_IEnumerable___0__Action___0__
+  commentId: M:ByteDecoder.RoyalLibrary.ForEachExtensions.ForEach``1(IEnumerable{``0},Action{``0})
   name.vb: ForEach(Of T)(IEnumerable(Of T), Action(Of T))
-  fullName: ByteDecoder.RoyalLibrary.ForEachExtensions.ForEach<T>(System.Collections.Generic.IEnumerable<T>, System.Action<T>)
-  fullName.vb: ByteDecoder.RoyalLibrary.ForEachExtensions.ForEach(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Action(Of T))
+  fullName: ByteDecoder.RoyalLibrary.ForEachExtensions.ForEach<T>(IEnumerable<T>, Action<T>)
+  fullName.vb: ByteDecoder.RoyalLibrary.ForEachExtensions.ForEach(Of T)(IEnumerable(Of T), Action(Of T))
   nameWithType: ForEachExtensions.ForEach<T>(IEnumerable<T>, Action<T>)
   nameWithType.vb: ForEachExtensions.ForEach(Of T)(IEnumerable(Of T), Action(Of T))
 - uid: ByteDecoder.RoyalLibrary.LinqSumExtensions
@@ -66,22 +66,22 @@ references:
   commentId: T:ByteDecoder.RoyalLibrary.LinqSumExtensions
   fullName: ByteDecoder.RoyalLibrary.LinqSumExtensions
   nameWithType: LinqSumExtensions
-- uid: ByteDecoder.RoyalLibrary.LinqSumExtensions.LongSum(System.Collections.Generic.IEnumerable{System.Int32})
+- uid: ByteDecoder.RoyalLibrary.LinqSumExtensions.LongSum(IEnumerable{System.Int32})
   name: LongSum(IEnumerable<Int32>)
-  href: api/ByteDecoder.RoyalLibrary.LinqSumExtensions.html#ByteDecoder_RoyalLibrary_LinqSumExtensions_LongSum_System_Collections_Generic_IEnumerable_System_Int32__
-  commentId: M:ByteDecoder.RoyalLibrary.LinqSumExtensions.LongSum(System.Collections.Generic.IEnumerable{System.Int32})
+  href: api/ByteDecoder.RoyalLibrary.LinqSumExtensions.html#ByteDecoder_RoyalLibrary_LinqSumExtensions_LongSum_IEnumerable_System_Int32__
+  commentId: M:ByteDecoder.RoyalLibrary.LinqSumExtensions.LongSum(IEnumerable{System.Int32})
   name.vb: LongSum(IEnumerable(Of Int32))
-  fullName: ByteDecoder.RoyalLibrary.LinqSumExtensions.LongSum(System.Collections.Generic.IEnumerable<System.Int32>)
-  fullName.vb: ByteDecoder.RoyalLibrary.LinqSumExtensions.LongSum(System.Collections.Generic.IEnumerable(Of System.Int32))
+  fullName: ByteDecoder.RoyalLibrary.LinqSumExtensions.LongSum(IEnumerable<System.Int32>)
+  fullName.vb: ByteDecoder.RoyalLibrary.LinqSumExtensions.LongSum(IEnumerable(Of System.Int32))
   nameWithType: LinqSumExtensions.LongSum(IEnumerable<Int32>)
   nameWithType.vb: LinqSumExtensions.LongSum(IEnumerable(Of Int32))
-- uid: ByteDecoder.RoyalLibrary.LinqSumExtensions.LongSum(System.Collections.Generic.IEnumerable{System.Nullable{System.Int32}})
+- uid: ByteDecoder.RoyalLibrary.LinqSumExtensions.LongSum(IEnumerable{System.Nullable{System.Int32}})
   name: LongSum(IEnumerable<Nullable<Int32>>)
-  href: api/ByteDecoder.RoyalLibrary.LinqSumExtensions.html#ByteDecoder_RoyalLibrary_LinqSumExtensions_LongSum_System_Collections_Generic_IEnumerable_System_Nullable_System_Int32___
-  commentId: M:ByteDecoder.RoyalLibrary.LinqSumExtensions.LongSum(System.Collections.Generic.IEnumerable{System.Nullable{System.Int32}})
+  href: api/ByteDecoder.RoyalLibrary.LinqSumExtensions.html#ByteDecoder_RoyalLibrary_LinqSumExtensions_LongSum_IEnumerable_System_Nullable_System_Int32___
+  commentId: M:ByteDecoder.RoyalLibrary.LinqSumExtensions.LongSum(IEnumerable{System.Nullable{System.Int32}})
   name.vb: LongSum(IEnumerable(Of Nullable(Of Int32)))
-  fullName: ByteDecoder.RoyalLibrary.LinqSumExtensions.LongSum(System.Collections.Generic.IEnumerable<System.Nullable<System.Int32>>)
-  fullName.vb: ByteDecoder.RoyalLibrary.LinqSumExtensions.LongSum(System.Collections.Generic.IEnumerable(Of System.Nullable(Of System.Int32)))
+  fullName: ByteDecoder.RoyalLibrary.LinqSumExtensions.LongSum(IEnumerable<System.Nullable<System.Int32>>)
+  fullName.vb: ByteDecoder.RoyalLibrary.LinqSumExtensions.LongSum(IEnumerable(Of System.Nullable(Of System.Int32)))
   nameWithType: LinqSumExtensions.LongSum(IEnumerable<Nullable<Int32>>)
   nameWithType.vb: LinqSumExtensions.LongSum(IEnumerable(Of Nullable(Of Int32)))
 - uid: ByteDecoder.RoyalLibrary.LinqSumExtensions.LongSum*
@@ -91,22 +91,22 @@ references:
   isSpec: "True"
   fullName: ByteDecoder.RoyalLibrary.LinqSumExtensions.LongSum
   nameWithType: LinqSumExtensions.LongSum
-- uid: ByteDecoder.RoyalLibrary.LinqSumExtensions.LongSum``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Int32})
+- uid: ByteDecoder.RoyalLibrary.LinqSumExtensions.LongSum``1(IEnumerable{``0},Func{``0,System.Int32})
   name: LongSum<T>(IEnumerable<T>, Func<T, Int32>)
-  href: api/ByteDecoder.RoyalLibrary.LinqSumExtensions.html#ByteDecoder_RoyalLibrary_LinqSumExtensions_LongSum__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Int32__
-  commentId: M:ByteDecoder.RoyalLibrary.LinqSumExtensions.LongSum``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Int32})
+  href: api/ByteDecoder.RoyalLibrary.LinqSumExtensions.html#ByteDecoder_RoyalLibrary_LinqSumExtensions_LongSum__1_IEnumerable___0__Func___0_System_Int32__
+  commentId: M:ByteDecoder.RoyalLibrary.LinqSumExtensions.LongSum``1(IEnumerable{``0},Func{``0,System.Int32})
   name.vb: LongSum(Of T)(IEnumerable(Of T), Func(Of T, Int32))
-  fullName: ByteDecoder.RoyalLibrary.LinqSumExtensions.LongSum<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, System.Int32>)
-  fullName.vb: ByteDecoder.RoyalLibrary.LinqSumExtensions.LongSum(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.Int32))
+  fullName: ByteDecoder.RoyalLibrary.LinqSumExtensions.LongSum<T>(IEnumerable<T>, Func<T, System.Int32>)
+  fullName.vb: ByteDecoder.RoyalLibrary.LinqSumExtensions.LongSum(Of T)(IEnumerable(Of T), Func(Of T, System.Int32))
   nameWithType: LinqSumExtensions.LongSum<T>(IEnumerable<T>, Func<T, Int32>)
   nameWithType.vb: LinqSumExtensions.LongSum(Of T)(IEnumerable(Of T), Func(Of T, Int32))
-- uid: ByteDecoder.RoyalLibrary.LinqSumExtensions.LongSum``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Nullable{System.Int32}})
+- uid: ByteDecoder.RoyalLibrary.LinqSumExtensions.LongSum``1(IEnumerable{``0},Func{``0,System.Nullable{System.Int32}})
   name: LongSum<T>(IEnumerable<T>, Func<T, Nullable<Int32>>)
-  href: api/ByteDecoder.RoyalLibrary.LinqSumExtensions.html#ByteDecoder_RoyalLibrary_LinqSumExtensions_LongSum__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Nullable_System_Int32___
-  commentId: M:ByteDecoder.RoyalLibrary.LinqSumExtensions.LongSum``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Nullable{System.Int32}})
+  href: api/ByteDecoder.RoyalLibrary.LinqSumExtensions.html#ByteDecoder_RoyalLibrary_LinqSumExtensions_LongSum__1_IEnumerable___0__Func___0_System_Nullable_System_Int32___
+  commentId: M:ByteDecoder.RoyalLibrary.LinqSumExtensions.LongSum``1(IEnumerable{``0},Func{``0,System.Nullable{System.Int32}})
   name.vb: LongSum(Of T)(IEnumerable(Of T), Func(Of T, Nullable(Of Int32)))
-  fullName: ByteDecoder.RoyalLibrary.LinqSumExtensions.LongSum<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, System.Nullable<System.Int32>>)
-  fullName.vb: ByteDecoder.RoyalLibrary.LinqSumExtensions.LongSum(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.Nullable(Of System.Int32)))
+  fullName: ByteDecoder.RoyalLibrary.LinqSumExtensions.LongSum<T>(IEnumerable<T>, Func<T, System.Nullable<System.Int32>>)
+  fullName.vb: ByteDecoder.RoyalLibrary.LinqSumExtensions.LongSum(Of T)(IEnumerable(Of T), Func(Of T, System.Nullable(Of System.Int32)))
   nameWithType: LinqSumExtensions.LongSum<T>(IEnumerable<T>, Func<T, Nullable<Int32>>)
   nameWithType.vb: LinqSumExtensions.LongSum(Of T)(IEnumerable(Of T), Func(Of T, Nullable(Of Int32)))
 - uid: ByteDecoder.RoyalLibrary.PagingExtensions
@@ -122,13 +122,13 @@ references:
   isSpec: "True"
   fullName: ByteDecoder.RoyalLibrary.PagingExtensions.Page
   nameWithType: PagingExtensions.Page
-- uid: ByteDecoder.RoyalLibrary.PagingExtensions.Page``1(System.Linq.IQueryable{``0},System.Int32,System.Int32)
+- uid: ByteDecoder.RoyalLibrary.PagingExtensions.Page``1(IQueryable{``0},System.Int32,System.Int32)
   name: Page<T>(IQueryable<T>, Int32, Int32)
-  href: api/ByteDecoder.RoyalLibrary.PagingExtensions.html#ByteDecoder_RoyalLibrary_PagingExtensions_Page__1_System_Linq_IQueryable___0__System_Int32_System_Int32_
-  commentId: M:ByteDecoder.RoyalLibrary.PagingExtensions.Page``1(System.Linq.IQueryable{``0},System.Int32,System.Int32)
+  href: api/ByteDecoder.RoyalLibrary.PagingExtensions.html#ByteDecoder_RoyalLibrary_PagingExtensions_Page__1_IQueryable___0__System_Int32_System_Int32_
+  commentId: M:ByteDecoder.RoyalLibrary.PagingExtensions.Page``1(IQueryable{``0},System.Int32,System.Int32)
   name.vb: Page(Of T)(IQueryable(Of T), Int32, Int32)
-  fullName: ByteDecoder.RoyalLibrary.PagingExtensions.Page<T>(System.Linq.IQueryable<T>, System.Int32, System.Int32)
-  fullName.vb: ByteDecoder.RoyalLibrary.PagingExtensions.Page(Of T)(System.Linq.IQueryable(Of T), System.Int32, System.Int32)
+  fullName: ByteDecoder.RoyalLibrary.PagingExtensions.Page<T>(IQueryable<T>, System.Int32, System.Int32)
+  fullName.vb: ByteDecoder.RoyalLibrary.PagingExtensions.Page(Of T)(IQueryable(Of T), System.Int32, System.Int32)
   nameWithType: PagingExtensions.Page<T>(IQueryable<T>, Int32, Int32)
   nameWithType.vb: PagingExtensions.Page(Of T)(IQueryable(Of T), Int32, Int32)
 - uid: ByteDecoder.RoyalLibrary.ParityMathExtensions
@@ -143,13 +143,13 @@ references:
   commentId: F:ByteDecoder.RoyalLibrary.ParityMathExtensions.EvenPredicate
   fullName: ByteDecoder.RoyalLibrary.ParityMathExtensions.EvenPredicate
   nameWithType: ParityMathExtensions.EvenPredicate
-- uid: ByteDecoder.RoyalLibrary.ParityMathExtensions.Evens(System.Collections.Generic.IEnumerable{System.Int32})
+- uid: ByteDecoder.RoyalLibrary.ParityMathExtensions.Evens(IEnumerable{System.Int32})
   name: Evens(IEnumerable<Int32>)
-  href: api/ByteDecoder.RoyalLibrary.ParityMathExtensions.html#ByteDecoder_RoyalLibrary_ParityMathExtensions_Evens_System_Collections_Generic_IEnumerable_System_Int32__
-  commentId: M:ByteDecoder.RoyalLibrary.ParityMathExtensions.Evens(System.Collections.Generic.IEnumerable{System.Int32})
+  href: api/ByteDecoder.RoyalLibrary.ParityMathExtensions.html#ByteDecoder_RoyalLibrary_ParityMathExtensions_Evens_IEnumerable_System_Int32__
+  commentId: M:ByteDecoder.RoyalLibrary.ParityMathExtensions.Evens(IEnumerable{System.Int32})
   name.vb: Evens(IEnumerable(Of Int32))
-  fullName: ByteDecoder.RoyalLibrary.ParityMathExtensions.Evens(System.Collections.Generic.IEnumerable<System.Int32>)
-  fullName.vb: ByteDecoder.RoyalLibrary.ParityMathExtensions.Evens(System.Collections.Generic.IEnumerable(Of System.Int32))
+  fullName: ByteDecoder.RoyalLibrary.ParityMathExtensions.Evens(IEnumerable<System.Int32>)
+  fullName.vb: ByteDecoder.RoyalLibrary.ParityMathExtensions.Evens(IEnumerable(Of System.Int32))
   nameWithType: ParityMathExtensions.Evens(IEnumerable<Int32>)
   nameWithType.vb: ParityMathExtensions.Evens(IEnumerable(Of Int32))
 - uid: ByteDecoder.RoyalLibrary.ParityMathExtensions.Evens*
@@ -159,13 +159,13 @@ references:
   isSpec: "True"
   fullName: ByteDecoder.RoyalLibrary.ParityMathExtensions.Evens
   nameWithType: ParityMathExtensions.Evens
-- uid: ByteDecoder.RoyalLibrary.ParityMathExtensions.Evens``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Int32})
+- uid: ByteDecoder.RoyalLibrary.ParityMathExtensions.Evens``1(IEnumerable{``0},Func{``0,System.Int32})
   name: Evens<T>(IEnumerable<T>, Func<T, Int32>)
-  href: api/ByteDecoder.RoyalLibrary.ParityMathExtensions.html#ByteDecoder_RoyalLibrary_ParityMathExtensions_Evens__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Int32__
-  commentId: M:ByteDecoder.RoyalLibrary.ParityMathExtensions.Evens``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Int32})
+  href: api/ByteDecoder.RoyalLibrary.ParityMathExtensions.html#ByteDecoder_RoyalLibrary_ParityMathExtensions_Evens__1_IEnumerable___0__Func___0_System_Int32__
+  commentId: M:ByteDecoder.RoyalLibrary.ParityMathExtensions.Evens``1(IEnumerable{``0},Func{``0,System.Int32})
   name.vb: Evens(Of T)(IEnumerable(Of T), Func(Of T, Int32))
-  fullName: ByteDecoder.RoyalLibrary.ParityMathExtensions.Evens<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, System.Int32>)
-  fullName.vb: ByteDecoder.RoyalLibrary.ParityMathExtensions.Evens(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.Int32))
+  fullName: ByteDecoder.RoyalLibrary.ParityMathExtensions.Evens<T>(IEnumerable<T>, Func<T, System.Int32>)
+  fullName.vb: ByteDecoder.RoyalLibrary.ParityMathExtensions.Evens(Of T)(IEnumerable(Of T), Func(Of T, System.Int32))
   nameWithType: ParityMathExtensions.Evens<T>(IEnumerable<T>, Func<T, Int32>)
   nameWithType.vb: ParityMathExtensions.Evens(Of T)(IEnumerable(Of T), Func(Of T, Int32))
 - uid: ByteDecoder.RoyalLibrary.ParityMathExtensions.OddPredicate
@@ -174,13 +174,13 @@ references:
   commentId: F:ByteDecoder.RoyalLibrary.ParityMathExtensions.OddPredicate
   fullName: ByteDecoder.RoyalLibrary.ParityMathExtensions.OddPredicate
   nameWithType: ParityMathExtensions.OddPredicate
-- uid: ByteDecoder.RoyalLibrary.ParityMathExtensions.Odds(System.Collections.Generic.IEnumerable{System.Int32})
+- uid: ByteDecoder.RoyalLibrary.ParityMathExtensions.Odds(IEnumerable{System.Int32})
   name: Odds(IEnumerable<Int32>)
-  href: api/ByteDecoder.RoyalLibrary.ParityMathExtensions.html#ByteDecoder_RoyalLibrary_ParityMathExtensions_Odds_System_Collections_Generic_IEnumerable_System_Int32__
-  commentId: M:ByteDecoder.RoyalLibrary.ParityMathExtensions.Odds(System.Collections.Generic.IEnumerable{System.Int32})
+  href: api/ByteDecoder.RoyalLibrary.ParityMathExtensions.html#ByteDecoder_RoyalLibrary_ParityMathExtensions_Odds_IEnumerable_System_Int32__
+  commentId: M:ByteDecoder.RoyalLibrary.ParityMathExtensions.Odds(IEnumerable{System.Int32})
   name.vb: Odds(IEnumerable(Of Int32))
-  fullName: ByteDecoder.RoyalLibrary.ParityMathExtensions.Odds(System.Collections.Generic.IEnumerable<System.Int32>)
-  fullName.vb: ByteDecoder.RoyalLibrary.ParityMathExtensions.Odds(System.Collections.Generic.IEnumerable(Of System.Int32))
+  fullName: ByteDecoder.RoyalLibrary.ParityMathExtensions.Odds(IEnumerable<System.Int32>)
+  fullName.vb: ByteDecoder.RoyalLibrary.ParityMathExtensions.Odds(IEnumerable(Of System.Int32))
   nameWithType: ParityMathExtensions.Odds(IEnumerable<Int32>)
   nameWithType.vb: ParityMathExtensions.Odds(IEnumerable(Of Int32))
 - uid: ByteDecoder.RoyalLibrary.ParityMathExtensions.Odds*
@@ -190,13 +190,13 @@ references:
   isSpec: "True"
   fullName: ByteDecoder.RoyalLibrary.ParityMathExtensions.Odds
   nameWithType: ParityMathExtensions.Odds
-- uid: ByteDecoder.RoyalLibrary.ParityMathExtensions.Odds``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Int32})
+- uid: ByteDecoder.RoyalLibrary.ParityMathExtensions.Odds``1(IEnumerable{``0},Func{``0,System.Int32})
   name: Odds<T>(IEnumerable<T>, Func<T, Int32>)
-  href: api/ByteDecoder.RoyalLibrary.ParityMathExtensions.html#ByteDecoder_RoyalLibrary_ParityMathExtensions_Odds__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Int32__
-  commentId: M:ByteDecoder.RoyalLibrary.ParityMathExtensions.Odds``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Int32})
+  href: api/ByteDecoder.RoyalLibrary.ParityMathExtensions.html#ByteDecoder_RoyalLibrary_ParityMathExtensions_Odds__1_IEnumerable___0__Func___0_System_Int32__
+  commentId: M:ByteDecoder.RoyalLibrary.ParityMathExtensions.Odds``1(IEnumerable{``0},Func{``0,System.Int32})
   name.vb: Odds(Of T)(IEnumerable(Of T), Func(Of T, Int32))
-  fullName: ByteDecoder.RoyalLibrary.ParityMathExtensions.Odds<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, System.Int32>)
-  fullName.vb: ByteDecoder.RoyalLibrary.ParityMathExtensions.Odds(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.Int32))
+  fullName: ByteDecoder.RoyalLibrary.ParityMathExtensions.Odds<T>(IEnumerable<T>, Func<T, System.Int32>)
+  fullName.vb: ByteDecoder.RoyalLibrary.ParityMathExtensions.Odds(Of T)(IEnumerable(Of T), Func(Of T, System.Int32))
   nameWithType: ParityMathExtensions.Odds<T>(IEnumerable<T>, Func<T, Int32>)
   nameWithType.vb: ParityMathExtensions.Odds(Of T)(IEnumerable(Of T), Func(Of T, Int32))
 - uid: ByteDecoder.RoyalLibrary.ParityMathExtensions.ParityEvaluator*
@@ -206,22 +206,22 @@ references:
   isSpec: "True"
   fullName: ByteDecoder.RoyalLibrary.ParityMathExtensions.ParityEvaluator
   nameWithType: ParityMathExtensions.ParityEvaluator
-- uid: ByteDecoder.RoyalLibrary.ParityMathExtensions.ParityEvaluator``1(System.Collections.Generic.IEnumerable{``0},System.Func{System.Int32,System.Boolean},System.Func{``0,System.Int32})
+- uid: ByteDecoder.RoyalLibrary.ParityMathExtensions.ParityEvaluator``1(IEnumerable{``0},Func{System.Int32,System.Boolean},Func{``0,System.Int32})
   name: ParityEvaluator<T>(IEnumerable<T>, Func<Int32, Boolean>, Func<T, Int32>)
-  href: api/ByteDecoder.RoyalLibrary.ParityMathExtensions.html#ByteDecoder_RoyalLibrary_ParityMathExtensions_ParityEvaluator__1_System_Collections_Generic_IEnumerable___0__System_Func_System_Int32_System_Boolean__System_Func___0_System_Int32__
-  commentId: M:ByteDecoder.RoyalLibrary.ParityMathExtensions.ParityEvaluator``1(System.Collections.Generic.IEnumerable{``0},System.Func{System.Int32,System.Boolean},System.Func{``0,System.Int32})
+  href: api/ByteDecoder.RoyalLibrary.ParityMathExtensions.html#ByteDecoder_RoyalLibrary_ParityMathExtensions_ParityEvaluator__1_IEnumerable___0__Func_System_Int32_System_Boolean__Func___0_System_Int32__
+  commentId: M:ByteDecoder.RoyalLibrary.ParityMathExtensions.ParityEvaluator``1(IEnumerable{``0},Func{System.Int32,System.Boolean},Func{``0,System.Int32})
   name.vb: ParityEvaluator(Of T)(IEnumerable(Of T), Func(Of Int32, Boolean), Func(Of T, Int32))
-  fullName: ByteDecoder.RoyalLibrary.ParityMathExtensions.ParityEvaluator<T>(System.Collections.Generic.IEnumerable<T>, System.Func<System.Int32, System.Boolean>, System.Func<T, System.Int32>)
-  fullName.vb: ByteDecoder.RoyalLibrary.ParityMathExtensions.ParityEvaluator(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of System.Int32, System.Boolean), System.Func(Of T, System.Int32))
+  fullName: ByteDecoder.RoyalLibrary.ParityMathExtensions.ParityEvaluator<T>(IEnumerable<T>, Func<System.Int32, System.Boolean>, Func<T, System.Int32>)
+  fullName.vb: ByteDecoder.RoyalLibrary.ParityMathExtensions.ParityEvaluator(Of T)(IEnumerable(Of T), Func(Of System.Int32, System.Boolean), Func(Of T, System.Int32))
   nameWithType: ParityMathExtensions.ParityEvaluator<T>(IEnumerable<T>, Func<Int32, Boolean>, Func<T, Int32>)
   nameWithType.vb: ParityMathExtensions.ParityEvaluator(Of T)(IEnumerable(Of T), Func(Of Int32, Boolean), Func(Of T, Int32))
-- uid: ByteDecoder.RoyalLibrary.ParityMathExtensions.TotalAllEvens(System.Collections.Generic.IEnumerable{System.Int32})
+- uid: ByteDecoder.RoyalLibrary.ParityMathExtensions.TotalAllEvens(IEnumerable{System.Int32})
   name: TotalAllEvens(IEnumerable<Int32>)
-  href: api/ByteDecoder.RoyalLibrary.ParityMathExtensions.html#ByteDecoder_RoyalLibrary_ParityMathExtensions_TotalAllEvens_System_Collections_Generic_IEnumerable_System_Int32__
-  commentId: M:ByteDecoder.RoyalLibrary.ParityMathExtensions.TotalAllEvens(System.Collections.Generic.IEnumerable{System.Int32})
+  href: api/ByteDecoder.RoyalLibrary.ParityMathExtensions.html#ByteDecoder_RoyalLibrary_ParityMathExtensions_TotalAllEvens_IEnumerable_System_Int32__
+  commentId: M:ByteDecoder.RoyalLibrary.ParityMathExtensions.TotalAllEvens(IEnumerable{System.Int32})
   name.vb: TotalAllEvens(IEnumerable(Of Int32))
-  fullName: ByteDecoder.RoyalLibrary.ParityMathExtensions.TotalAllEvens(System.Collections.Generic.IEnumerable<System.Int32>)
-  fullName.vb: ByteDecoder.RoyalLibrary.ParityMathExtensions.TotalAllEvens(System.Collections.Generic.IEnumerable(Of System.Int32))
+  fullName: ByteDecoder.RoyalLibrary.ParityMathExtensions.TotalAllEvens(IEnumerable<System.Int32>)
+  fullName.vb: ByteDecoder.RoyalLibrary.ParityMathExtensions.TotalAllEvens(IEnumerable(Of System.Int32))
   nameWithType: ParityMathExtensions.TotalAllEvens(IEnumerable<Int32>)
   nameWithType.vb: ParityMathExtensions.TotalAllEvens(IEnumerable(Of Int32))
 - uid: ByteDecoder.RoyalLibrary.ParityMathExtensions.TotalAllEvens*
@@ -231,13 +231,13 @@ references:
   isSpec: "True"
   fullName: ByteDecoder.RoyalLibrary.ParityMathExtensions.TotalAllEvens
   nameWithType: ParityMathExtensions.TotalAllEvens
-- uid: ByteDecoder.RoyalLibrary.ParityMathExtensions.TotalAllOdds(System.Collections.Generic.IEnumerable{System.Int32})
+- uid: ByteDecoder.RoyalLibrary.ParityMathExtensions.TotalAllOdds(IEnumerable{System.Int32})
   name: TotalAllOdds(IEnumerable<Int32>)
-  href: api/ByteDecoder.RoyalLibrary.ParityMathExtensions.html#ByteDecoder_RoyalLibrary_ParityMathExtensions_TotalAllOdds_System_Collections_Generic_IEnumerable_System_Int32__
-  commentId: M:ByteDecoder.RoyalLibrary.ParityMathExtensions.TotalAllOdds(System.Collections.Generic.IEnumerable{System.Int32})
+  href: api/ByteDecoder.RoyalLibrary.ParityMathExtensions.html#ByteDecoder_RoyalLibrary_ParityMathExtensions_TotalAllOdds_IEnumerable_System_Int32__
+  commentId: M:ByteDecoder.RoyalLibrary.ParityMathExtensions.TotalAllOdds(IEnumerable{System.Int32})
   name.vb: TotalAllOdds(IEnumerable(Of Int32))
-  fullName: ByteDecoder.RoyalLibrary.ParityMathExtensions.TotalAllOdds(System.Collections.Generic.IEnumerable<System.Int32>)
-  fullName.vb: ByteDecoder.RoyalLibrary.ParityMathExtensions.TotalAllOdds(System.Collections.Generic.IEnumerable(Of System.Int32))
+  fullName: ByteDecoder.RoyalLibrary.ParityMathExtensions.TotalAllOdds(IEnumerable<System.Int32>)
+  fullName.vb: ByteDecoder.RoyalLibrary.ParityMathExtensions.TotalAllOdds(IEnumerable(Of System.Int32))
   nameWithType: ParityMathExtensions.TotalAllOdds(IEnumerable<Int32>)
   nameWithType.vb: ParityMathExtensions.TotalAllOdds(IEnumerable(Of Int32))
 - uid: ByteDecoder.RoyalLibrary.ParityMathExtensions.TotalAllOdds*
@@ -260,13 +260,13 @@ references:
   isSpec: "True"
   fullName: ByteDecoder.RoyalLibrary.RoyalExtensions.Map
   nameWithType: RoyalExtensions.Map
-- uid: ByteDecoder.RoyalLibrary.RoyalExtensions.Map``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+- uid: ByteDecoder.RoyalLibrary.RoyalExtensions.Map``2(IEnumerable{``0},Func{``0,``1})
   name: Map<TInput, TResult>(IEnumerable<TInput>, Func<TInput, TResult>)
-  href: api/ByteDecoder.RoyalLibrary.RoyalExtensions.html#ByteDecoder_RoyalLibrary_RoyalExtensions_Map__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__
-  commentId: M:ByteDecoder.RoyalLibrary.RoyalExtensions.Map``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  href: api/ByteDecoder.RoyalLibrary.RoyalExtensions.html#ByteDecoder_RoyalLibrary_RoyalExtensions_Map__2_IEnumerable___0__Func___0___1__
+  commentId: M:ByteDecoder.RoyalLibrary.RoyalExtensions.Map``2(IEnumerable{``0},Func{``0,``1})
   name.vb: Map(Of TInput, TResult)(IEnumerable(Of TInput), Func(Of TInput, TResult))
-  fullName: ByteDecoder.RoyalLibrary.RoyalExtensions.Map<TInput, TResult>(System.Collections.Generic.IEnumerable<TInput>, System.Func<TInput, TResult>)
-  fullName.vb: ByteDecoder.RoyalLibrary.RoyalExtensions.Map(Of TInput, TResult)(System.Collections.Generic.IEnumerable(Of TInput), System.Func(Of TInput, TResult))
+  fullName: ByteDecoder.RoyalLibrary.RoyalExtensions.Map<TInput, TResult>(IEnumerable<TInput>, Func<TInput, TResult>)
+  fullName.vb: ByteDecoder.RoyalLibrary.RoyalExtensions.Map(Of TInput, TResult)(IEnumerable(Of TInput), Func(Of TInput, TResult))
   nameWithType: RoyalExtensions.Map<TInput, TResult>(IEnumerable<TInput>, Func<TInput, TResult>)
   nameWithType.vb: RoyalExtensions.Map(Of TInput, TResult)(IEnumerable(Of TInput), Func(Of TInput, TResult))
 - uid: ByteDecoder.RoyalLibrary.RoyalExtensions.MaxElement*
@@ -276,13 +276,13 @@ references:
   isSpec: "True"
   fullName: ByteDecoder.RoyalLibrary.RoyalExtensions.MaxElement
   nameWithType: RoyalExtensions.MaxElement
-- uid: ByteDecoder.RoyalLibrary.RoyalExtensions.MaxElement``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+- uid: ByteDecoder.RoyalLibrary.RoyalExtensions.MaxElement``2(IEnumerable{``0},Func{``0,``1})
   name: MaxElement<TElement, TData>(IEnumerable<TElement>, Func<TElement, TData>)
-  href: api/ByteDecoder.RoyalLibrary.RoyalExtensions.html#ByteDecoder_RoyalLibrary_RoyalExtensions_MaxElement__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__
-  commentId: M:ByteDecoder.RoyalLibrary.RoyalExtensions.MaxElement``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  href: api/ByteDecoder.RoyalLibrary.RoyalExtensions.html#ByteDecoder_RoyalLibrary_RoyalExtensions_MaxElement__2_IEnumerable___0__Func___0___1__
+  commentId: M:ByteDecoder.RoyalLibrary.RoyalExtensions.MaxElement``2(IEnumerable{``0},Func{``0,``1})
   name.vb: MaxElement(Of TElement, TData)(IEnumerable(Of TElement), Func(Of TElement, TData))
-  fullName: ByteDecoder.RoyalLibrary.RoyalExtensions.MaxElement<TElement, TData>(System.Collections.Generic.IEnumerable<TElement>, System.Func<TElement, TData>)
-  fullName.vb: ByteDecoder.RoyalLibrary.RoyalExtensions.MaxElement(Of TElement, TData)(System.Collections.Generic.IEnumerable(Of TElement), System.Func(Of TElement, TData))
+  fullName: ByteDecoder.RoyalLibrary.RoyalExtensions.MaxElement<TElement, TData>(IEnumerable<TElement>, Func<TElement, TData>)
+  fullName.vb: ByteDecoder.RoyalLibrary.RoyalExtensions.MaxElement(Of TElement, TData)(IEnumerable(Of TElement), Func(Of TElement, TData))
   nameWithType: RoyalExtensions.MaxElement<TElement, TData>(IEnumerable<TElement>, Func<TElement, TData>)
   nameWithType.vb: RoyalExtensions.MaxElement(Of TElement, TData)(IEnumerable(Of TElement), Func(Of TElement, TData))
 - uid: ByteDecoder.RoyalLibrary.SortingExtensions
@@ -291,22 +291,22 @@ references:
   commentId: T:ByteDecoder.RoyalLibrary.SortingExtensions
   fullName: ByteDecoder.RoyalLibrary.SortingExtensions
   nameWithType: SortingExtensions
-- uid: ByteDecoder.RoyalLibrary.SortingExtensions.SortByLastNameAsync(System.Collections.Generic.IEnumerable{System.String})
+- uid: ByteDecoder.RoyalLibrary.SortingExtensions.SortByLastNameAsync(IEnumerable{System.String})
   name: SortByLastNameAsync(IEnumerable<String>)
-  href: api/ByteDecoder.RoyalLibrary.SortingExtensions.html#ByteDecoder_RoyalLibrary_SortingExtensions_SortByLastNameAsync_System_Collections_Generic_IEnumerable_System_String__
-  commentId: M:ByteDecoder.RoyalLibrary.SortingExtensions.SortByLastNameAsync(System.Collections.Generic.IEnumerable{System.String})
+  href: api/ByteDecoder.RoyalLibrary.SortingExtensions.html#ByteDecoder_RoyalLibrary_SortingExtensions_SortByLastNameAsync_IEnumerable_System_String__
+  commentId: M:ByteDecoder.RoyalLibrary.SortingExtensions.SortByLastNameAsync(IEnumerable{System.String})
   name.vb: SortByLastNameAsync(IEnumerable(Of String))
-  fullName: ByteDecoder.RoyalLibrary.SortingExtensions.SortByLastNameAsync(System.Collections.Generic.IEnumerable<System.String>)
-  fullName.vb: ByteDecoder.RoyalLibrary.SortingExtensions.SortByLastNameAsync(System.Collections.Generic.IEnumerable(Of System.String))
+  fullName: ByteDecoder.RoyalLibrary.SortingExtensions.SortByLastNameAsync(IEnumerable<System.String>)
+  fullName.vb: ByteDecoder.RoyalLibrary.SortingExtensions.SortByLastNameAsync(IEnumerable(Of System.String))
   nameWithType: SortingExtensions.SortByLastNameAsync(IEnumerable<String>)
   nameWithType.vb: SortingExtensions.SortByLastNameAsync(IEnumerable(Of String))
-- uid: ByteDecoder.RoyalLibrary.SortingExtensions.SortByLastNameAsync(System.Collections.Generic.IEnumerable{System.String},System.Action{System.String})
+- uid: ByteDecoder.RoyalLibrary.SortingExtensions.SortByLastNameAsync(IEnumerable{System.String},Action{System.String})
   name: SortByLastNameAsync(IEnumerable<String>, Action<String>)
-  href: api/ByteDecoder.RoyalLibrary.SortingExtensions.html#ByteDecoder_RoyalLibrary_SortingExtensions_SortByLastNameAsync_System_Collections_Generic_IEnumerable_System_String__System_Action_System_String__
-  commentId: M:ByteDecoder.RoyalLibrary.SortingExtensions.SortByLastNameAsync(System.Collections.Generic.IEnumerable{System.String},System.Action{System.String})
+  href: api/ByteDecoder.RoyalLibrary.SortingExtensions.html#ByteDecoder_RoyalLibrary_SortingExtensions_SortByLastNameAsync_IEnumerable_System_String__Action_System_String__
+  commentId: M:ByteDecoder.RoyalLibrary.SortingExtensions.SortByLastNameAsync(IEnumerable{System.String},Action{System.String})
   name.vb: SortByLastNameAsync(IEnumerable(Of String), Action(Of String))
-  fullName: ByteDecoder.RoyalLibrary.SortingExtensions.SortByLastNameAsync(System.Collections.Generic.IEnumerable<System.String>, System.Action<System.String>)
-  fullName.vb: ByteDecoder.RoyalLibrary.SortingExtensions.SortByLastNameAsync(System.Collections.Generic.IEnumerable(Of System.String), System.Action(Of System.String))
+  fullName: ByteDecoder.RoyalLibrary.SortingExtensions.SortByLastNameAsync(IEnumerable<System.String>, Action<System.String>)
+  fullName.vb: ByteDecoder.RoyalLibrary.SortingExtensions.SortByLastNameAsync(IEnumerable(Of System.String), Action(Of System.String))
   nameWithType: SortingExtensions.SortByLastNameAsync(IEnumerable<String>, Action<String>)
   nameWithType.vb: SortingExtensions.SortByLastNameAsync(IEnumerable(Of String), Action(Of String))
 - uid: ByteDecoder.RoyalLibrary.SortingExtensions.SortByLastNameAsync*
@@ -322,11 +322,11 @@ references:
   commentId: T:ByteDecoder.RoyalLibrary.StreamReaderExtensions
   fullName: ByteDecoder.RoyalLibrary.StreamReaderExtensions
   nameWithType: StreamReaderExtensions
-- uid: ByteDecoder.RoyalLibrary.StreamReaderExtensions.Lines(System.IO.StreamReader)
+- uid: ByteDecoder.RoyalLibrary.StreamReaderExtensions.Lines(StreamReader)
   name: Lines(StreamReader)
-  href: api/ByteDecoder.RoyalLibrary.StreamReaderExtensions.html#ByteDecoder_RoyalLibrary_StreamReaderExtensions_Lines_System_IO_StreamReader_
-  commentId: M:ByteDecoder.RoyalLibrary.StreamReaderExtensions.Lines(System.IO.StreamReader)
-  fullName: ByteDecoder.RoyalLibrary.StreamReaderExtensions.Lines(System.IO.StreamReader)
+  href: api/ByteDecoder.RoyalLibrary.StreamReaderExtensions.html#ByteDecoder_RoyalLibrary_StreamReaderExtensions_Lines_StreamReader_
+  commentId: M:ByteDecoder.RoyalLibrary.StreamReaderExtensions.Lines(StreamReader)
+  fullName: ByteDecoder.RoyalLibrary.StreamReaderExtensions.Lines(StreamReader)
   nameWithType: StreamReaderExtensions.Lines(StreamReader)
 - uid: ByteDecoder.RoyalLibrary.StreamReaderExtensions.Lines*
   name: Lines
@@ -341,19 +341,19 @@ references:
   commentId: T:ByteDecoder.RoyalLibrary.TimesExtensions
   fullName: ByteDecoder.RoyalLibrary.TimesExtensions
   nameWithType: TimesExtensions
-- uid: ByteDecoder.RoyalLibrary.TimesExtensions.Times(System.Int32,System.Action)
+- uid: ByteDecoder.RoyalLibrary.TimesExtensions.Times(System.Int32,Action)
   name: Times(Int32, Action)
-  href: api/ByteDecoder.RoyalLibrary.TimesExtensions.html#ByteDecoder_RoyalLibrary_TimesExtensions_Times_System_Int32_System_Action_
-  commentId: M:ByteDecoder.RoyalLibrary.TimesExtensions.Times(System.Int32,System.Action)
-  fullName: ByteDecoder.RoyalLibrary.TimesExtensions.Times(System.Int32, System.Action)
+  href: api/ByteDecoder.RoyalLibrary.TimesExtensions.html#ByteDecoder_RoyalLibrary_TimesExtensions_Times_System_Int32_Action_
+  commentId: M:ByteDecoder.RoyalLibrary.TimesExtensions.Times(System.Int32,Action)
+  fullName: ByteDecoder.RoyalLibrary.TimesExtensions.Times(System.Int32, Action)
   nameWithType: TimesExtensions.Times(Int32, Action)
-- uid: ByteDecoder.RoyalLibrary.TimesExtensions.Times(System.Int32,System.Action{System.Int32})
+- uid: ByteDecoder.RoyalLibrary.TimesExtensions.Times(System.Int32,Action{System.Int32})
   name: Times(Int32, Action<Int32>)
-  href: api/ByteDecoder.RoyalLibrary.TimesExtensions.html#ByteDecoder_RoyalLibrary_TimesExtensions_Times_System_Int32_System_Action_System_Int32__
-  commentId: M:ByteDecoder.RoyalLibrary.TimesExtensions.Times(System.Int32,System.Action{System.Int32})
+  href: api/ByteDecoder.RoyalLibrary.TimesExtensions.html#ByteDecoder_RoyalLibrary_TimesExtensions_Times_System_Int32_Action_System_Int32__
+  commentId: M:ByteDecoder.RoyalLibrary.TimesExtensions.Times(System.Int32,Action{System.Int32})
   name.vb: Times(Int32, Action(Of Int32))
-  fullName: ByteDecoder.RoyalLibrary.TimesExtensions.Times(System.Int32, System.Action<System.Int32>)
-  fullName.vb: ByteDecoder.RoyalLibrary.TimesExtensions.Times(System.Int32, System.Action(Of System.Int32))
+  fullName: ByteDecoder.RoyalLibrary.TimesExtensions.Times(System.Int32, Action<System.Int32>)
+  fullName.vb: ByteDecoder.RoyalLibrary.TimesExtensions.Times(System.Int32, Action(Of System.Int32))
   nameWithType: TimesExtensions.Times(Int32, Action<Int32>)
   nameWithType.vb: TimesExtensions.Times(Int32, Action(Of Int32))
 - uid: ByteDecoder.RoyalLibrary.TimesExtensions.Times*
