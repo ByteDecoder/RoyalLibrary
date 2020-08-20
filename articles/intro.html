@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Add your introductions here! </title>
+    <title>Examples and usage </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Add your introductions here! ">
+    <meta name="title" content="Examples and usage ">
     <meta name="generator" content="docfx 2.51.0.0">
     
     <link rel="shortcut icon" href="../racer.ico">
@@ -67,8 +67,63 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="add-your-introductions-here">Add your introductions here!</h1>
+<h1 id="examples-and-usage">Examples and usage</h1>
 
+<pre><code class="lang-csharp">var myArray = new[] { 1, 45, 34, 435 };
+
+// Evens and odds
+myArray.Evens();
+myArray.Odds();
+
+// Sum
+myArray.TotalAllEvens();
+myArray.TotalAllOdds();
+
+// Times
+5.Times(_ =&gt; {
+  var theVar = 13;
+  Debug.Log($&quot;This is {theVar}&quot;);
+});
+
+// Sequences, IEnumerable&lt;T&gt;
+
+// Each
+myArray.ForEach(item =&gt; Debug.Log($&quot;Using the strength: {item}&quot;));
+
+string[] shapes = { &quot;circle&quot;, &quot;square&quot;, &quot;triangle&quot;, &quot;octagon&quot; };
+
+shapes.ForEach(shape =&gt; {
+  shape = shape.ToUpper();
+  Debug.Log(shape);
+});
+
+// Each with Index
+shapes.ForEach((item, index) =&gt; {
+  Debug.Log($&quot;Item: {item.ToUpper()} with index: {index}&quot;);
+});
+
+// Map
+myArray.Map(item =&gt; item * 2).Each(item =&gt; Debug.Log($&quot;Using the strength doubled: {item}&quot;));
+
+// Max Element in the sequence
+var maxBook = SampleData.Books.MaxElement(book =&gt; book.PageCount);
+Console.WriteLine($&quot;Max Book Page Count =&gt; {maxBook.Title}&quot;);
+
+// Deferred Execution with StreamReader sequences
+using var reader = new StreamReader(&quot;books.csv&quot;);
+
+Data =
+  from line in reader.Lines()
+  where !line.StartsWith(&quot;#&quot;)
+  let parts = line.Split(',')
+  select new { Title = parts[1], Publisher = parts[3], Isbn = parts[0] };
+
+// Indexes
+// 10011001000
+IList&lt;bool&gt; source = new List&lt;bool&gt; { true, false, false, true, true, false, false, true, false, false, false };
+Data = source.TopIndexes(element =&gt; element, 4);
+
+</code></pre>
 </article>
           </div>
           
