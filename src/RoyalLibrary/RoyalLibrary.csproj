@@ -29,7 +29,7 @@
         </None>
     </ItemGroup>
     <ItemGroup>
-        <PackageReference Include="ByteDecoder.Common" Version="0.3.0" />
+        <PackageReference Include="ByteDecoder.Common" Version="0.3.4" />
     </ItemGroup>
     <ItemGroup>
         <None Include="icon.png" Pack="true" Visible="false" PackagePath="" />
