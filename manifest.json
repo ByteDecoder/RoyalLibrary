@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ByteDecoder.RoyalLibrary.ConditionalIndexExtensions.html",
-          "hash": "IhC8xuwmKSTkTkKtOknZWQ=="
+          "hash": "dKc7r17KeLEEsnEsPb6+WQ=="
         }
       },
       "is_incremental": false,
@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ByteDecoder.RoyalLibrary.ForEachExtensions.html",
-          "hash": "2F67E3gq90QQMoqq6zyYdA=="
+          "hash": "2se4Tqoox6/DIIIUHfZ27w=="
         }
       },
       "is_incremental": false,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ByteDecoder.RoyalLibrary.LinqSumExtensions.html",
-          "hash": "dUjRn2HDPotQscZ679rwEg=="
+          "hash": "UT9V27bXmvgqIyL20rhDiw=="
         }
       },
       "is_incremental": false,
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ByteDecoder.RoyalLibrary.PagingExtensions.html",
-          "hash": "5aJJWSvxGb5R+mw++jeOQQ=="
+          "hash": "yHYu+BSRwShoho+wYsfkbw=="
         }
       },
       "is_incremental": false,
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ByteDecoder.RoyalLibrary.ParityMathExtensions.html",
-          "hash": "Z3lsyUqIE5y0vKev9hDhhg=="
+          "hash": "HFqG0Jkjp4np6YfVpqcL6g=="
         }
       },
       "is_incremental": false,
@@ -69,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ByteDecoder.RoyalLibrary.RoyalExtensions.html",
-          "hash": "jfrohU9+8xOSrA4AEUfI5w=="
+          "hash": "XGLGFYm/DhbJg7tO83ktgQ=="
         }
       },
       "is_incremental": false,
@@ -81,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ByteDecoder.RoyalLibrary.SortingExtensions.html",
-          "hash": "oVkt2Lw1KLnETrRMqdB8MQ=="
+          "hash": "4/esoXHdUmxFfnRv+jx1JA=="
         }
       },
       "is_incremental": false,
@@ -93,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ByteDecoder.RoyalLibrary.StreamReaderExtensions.html",
-          "hash": "yBZc+hJ82ilPD9jqYrHbWg=="
+          "hash": "w15Zpv/m4JIvreW8VB+MMg=="
         }
       },
       "is_incremental": false,
@@ -105,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ByteDecoder.RoyalLibrary.TimesExtensions.html",
-          "hash": "5SUtjPuaKoc6WshiHdGHRA=="
+          "hash": "FWjlbD8/4x4NkaMXzhzqNw=="
         }
       },
       "is_incremental": false,
@@ -117,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ByteDecoder.RoyalLibrary.html",
-          "hash": "NNKf+N+lQY9wAqbrtF+OsQ=="
+          "hash": "mSAcjmZWIDUA3VIJJ8bBBQ=="
         }
       },
       "is_incremental": false,
@@ -129,10 +129,10 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "oBpCfXuv5Jwk1FNtq1Braw=="
+          "hash": "3sYMJKo8+4gBeUR0syxxBg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -153,10 +153,10 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "OgyyoT1ijrr13S8AT95h6A=="
+          "hash": "mHECkrSKRVeRtm6VRzZ9cw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -177,10 +177,32 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "0G2ilMZPCM2d8GoMYYk1Eg=="
+          "hash": "qV9BsgYCtnEJd4rgWsJCGw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "racer.ico",
+      "output": {
+        "resource": {
+          "relative_path": "racer.ico"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "racer.svg",
+      "output": {
+        "resource": {
+          "relative_path": "racer.svg"
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -199,23 +221,32 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Cannot build incrementally because config changed.",
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ConfigChanged"
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 3,
-          "skipped_file_count": 3
+          "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 10,
-          "skipped_file_count": 1
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
