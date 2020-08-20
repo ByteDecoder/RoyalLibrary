@@ -9,10 +9,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ByteDecoder.RoyalLibrary.ConditionalIndexExtensions.html",
-          "hash": "QinXZcn7H39i9l6VHuP+fA=="
+          "hash": "VSRfg0zbt/JAzFCQ4Jp7pw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -21,10 +21,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ByteDecoder.RoyalLibrary.ForEachExtensions.html",
-          "hash": "PkX4Vq3643/422RXyN08og=="
+          "hash": "VFcIYDl23kFpIGZjIb8XfQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -33,10 +33,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ByteDecoder.RoyalLibrary.LinqSumExtensions.html",
-          "hash": "q/xhg0dZmqu9/iMfMA8I4g=="
+          "hash": "fIsCkPHsk+QKdObW0/HvMA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -45,10 +45,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ByteDecoder.RoyalLibrary.PagingExtensions.html",
-          "hash": "GjlvP7JsEN19c/KB130KmQ=="
+          "hash": "Razjm5f0BUCVN9Wo0dLCYw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -57,10 +57,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ByteDecoder.RoyalLibrary.ParityMathExtensions.html",
-          "hash": "NKErd7A6I4n3rSf4ssNSJw=="
+          "hash": "loauOAACnHLWFTKm8UcDOw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -69,10 +69,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ByteDecoder.RoyalLibrary.RoyalExtensions.html",
-          "hash": "92rJ2jnfEbLBi1cnKcvFmw=="
+          "hash": "lKwxmhpTjBk1P3Osz5T4sQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -81,10 +81,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ByteDecoder.RoyalLibrary.SortingExtensions.html",
-          "hash": "FBp85zSpMhd3Uo7eNDGn+A=="
+          "hash": "BznR64vBHvVIDXETC+AcQg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -93,10 +93,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ByteDecoder.RoyalLibrary.StreamReaderExtensions.html",
-          "hash": "txWpfE5bw8EGbRI0LsytlQ=="
+          "hash": "N9p6FJmh41pghujyoUl27Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -105,10 +105,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ByteDecoder.RoyalLibrary.TimesExtensions.html",
-          "hash": "dAtx17PhP1YjJf+sNCwd4Q=="
+          "hash": "e/lchQ4QmJSfBeDdgmb7Wg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -117,10 +117,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ByteDecoder.RoyalLibrary.html",
-          "hash": "rc2b/GgHcjptFa0H2R5h9g=="
+          "hash": "iIzwW9rIEFP/jTOxHEYUoA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -129,10 +129,10 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "KX1JM8vWxo1pbREGZzQCSA=="
+          "hash": "ACVn9gWB7RkCr5LfeyCnUA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -149,10 +149,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "app_logo.svg",
+      "source_relative_path": "app_racer.svg",
       "output": {
         "resource": {
-          "relative_path": "app_logo.svg"
+          "relative_path": "app_racer.svg"
         }
       },
       "is_incremental": false,
@@ -164,10 +164,10 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "+npcXo023EUTiPE+fx+oYw=="
+          "hash": "ftXdVU0WP3TbFm2fHz5FRA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -188,10 +188,10 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "BsBGWUuzGmLfN8goCgjcUg=="
+          "hash": "hXYIc6mX9sS295GUMdkVdQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -221,23 +221,25 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Cannot build incrementally because config changed.",
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ConfigChanged"
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 3,
-          "skipped_file_count": 3
+          "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 10,
-          "skipped_file_count": 10
+          "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
