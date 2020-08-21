@@ -6,7 +6,7 @@ using ByteDecoder.Common.GuardClauses;
 namespace ByteDecoder.RoyalLibrary
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public static class ConditionalIndexExtensions
     {
